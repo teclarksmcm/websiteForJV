@@ -1,0 +1,69 @@
+/* Basic body styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container with image border */
+.container-header {
+    position: relative;
+    width: 30vw;
+    height: 80vh;
+    border: 2vw solid transparent;
+    border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Adjust path and sizing as needed */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Main container with image border */
+.container-header-text {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    flex:1  ;
+    flex-direction: column; /* Stack content vertically */
+    max-width: 30vw;
+    max-height:10vh ;
+}
+
+/* Header container for logo and text */
+
+
+/* Logo styling */
+.logo {
+    
+    width: 4.5vw; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0;
+    margin-right: 0; /* Space between image and container */
+}
+
+/* Header text styling */
+.header {
+
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items vertically */
+    flex-direction: row;
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 3vw; /* Adjust as needed */
+
+}
+
+.header p {
+    margin: 0; /* Remove default margin */
+    font-size: 1vw; /* Adjust as needed */
+}
+.drink-list {
+    margin: 0; /* Remove default margin */
+    text-align: center;
+
+    font-size: .9vw; /* Adjust as needed */
+}
+
+
