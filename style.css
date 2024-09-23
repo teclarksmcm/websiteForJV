@@ -10,42 +10,41 @@ body, html {
 /* Main container with image border */
 .container-header {
     position: relative;
-    max-width: 100%; /* Prevent overflow */
-    width: 95%; /* Allow for some margin */
-    height: auto; /* Let height adjust based on content */
-    max-height: 90vh; /* Set a max height to limit container size */
-    border: 20px solid transparent; /* Fixed pixel value for border */
-    border-image: url("images/background_outline_padding_6x9.svg") 20 fill; /* Ensure the image path is correct */
+    max-width: 100%;
+    width: 95%; 
+    height: auto;
+    max-height: 90vh;
+    border: 20px solid transparent; 
+    border-image: url("images/background_outline_padding_6x9.svg") 20 fill;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    padding: 10px; /* Add padding to avoid content touching edges */
+    flex-direction: column; 
+    padding: 10px; 
 }
 .scrollable-content {
     overflow: auto; /* Enable scrolling */
-    
-    height:80vh; /* Adjust this to make the scrollable area smaller */
+    height:80vh; 
 }
 
 /* Main container text */
 .container-header-text {
-    display: flex; /* Use flexbox to align items horizontally */
+    display: flex; 
     align-items: center; /* Center items vertically */
     flex: 1; /* Take available space */
-    flex-direction: column; /* Stack content vertically */
-    max-width: 100%; /* Make sure it uses full width */
+    flex-direction: column;
+    max-width: 100%; 
 }
 
 /* Logo styling */
 .logo {
-    width: 10vw; /* Adjust size as needed */
-    max-width: 10vw; /* Maintain aspect ratio */
+    width: 10vw; 
+    max-width: 10vw; 
     height: auto; /* Keep aspect ratio */
     padding:1vh;
     margin: 0; /* Remove unnecessary margins */
 }
 /* Custom scrollbar for webkit browsers */
 .container-header::-webkit-scrollbar {
-    width: 6px; /* Width of the vertical scrollbar */
+    width: 6px;
 }
 
 /* Track */
@@ -66,33 +65,33 @@ body, html {
 }
 /* Header styling */
 .header {
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow wrapping */
-    padding: 10px; /* Optional: padding around header */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 10px;
 }
 
 .header h1 {
     margin: 0; /* Remove default margin */
-    font-size: 5vw; /* Adjust as needed */
-    max-width: 90%; /* Prevent overflow */
-    word-wrap: break-word; /* Allow wrapping */
+    font-size: 5vw; 
+    max-width: 90%;
+    word-wrap: break-word; 
 }
 
 .header p {
-    margin: 0; /* Remove default margin */
-    font-size: 1.5vw; /* Adjust as needed */
-    max-width: 90%; /* Prevent overflow */
-    word-wrap: break-word; /* Allow wrapping */
+    margin: 0; 
+    font-size: 1.5vw;
+    max-width: 90%; 
+    word-wrap: break-word;
 }
 
 .drink-list {
-    margin: 0; /* Remove default margin */
-    padding: 10px; /* Add padding if needed */
-    text-align: center; /* Center the text */
-    font-size: 2.5vw; /* Adjust as needed */
-    max-width: 90%; /* Prevent overflow */
-    overflow-wrap: break-word; /* Allow words to break */
+    margin: 0; 
+    padding: 10px; 
+    text-align: center; 
+    font-size: 2.5vw; 
+    max-width: 90%; 
+    overflow-wrap: break-word; 
 }
 
