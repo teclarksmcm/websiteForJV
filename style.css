@@ -1,7 +1,8 @@
 /* Basic body styling */
 body, html {
     height: 100%;
-    margin: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +15,12 @@ body, html {
     max-width: 600px; /* Set a max width */
     max-height: 90vh; /* Set a max height */
     height: auto; /* Let height adjust based on content */
-    border: 2px solid transparent; /* Change to fixed pixel for better control */
+    border: 30px solid transparent; /* Use a fixed pixel for control */
     border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Ensure the image path is correct */
     display: flex;
     flex-direction: column; /* Stack content vertically */
     overflow: hidden; /* Prevent content overflow */
+    padding: 0; /* Remove padding */
 }
 
 /* Main container text */
@@ -62,7 +64,7 @@ body, html {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 650px) {
+@media (max-width: 100vw) {
     .container-header {
         width: 95%; /* Use more width on smaller screens */
         height: auto; /* Let height adjust based on content */
