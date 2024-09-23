@@ -10,66 +10,71 @@ body, html {
 /* Main container with image border */
 .container-header {
     position: relative;
-    width: 30vw;
-    height: 80vh;
+    width: 30vw; /* Adjust for responsiveness */
+    max-width: 600px; /* Optional: set a max width */
+    max-height: 90vh; /* Set a max height to prevent it from being too tall */
+    height: auto; /* Let height adjust based on content */
     border: 2vw solid transparent;
-    border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Adjust path and sizing as needed */
+    border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Ensure the image path is correct */
     display: flex;
     flex-direction: column; /* Stack content vertically */
+    overflow: hidden; /* Prevent content overflow */
 }
 
-/* Main container with image border */
+/* Main container text */
 .container-header-text {
     display: flex; /* Use flexbox to align items horizontally */
     align-items: center; /* Center items vertically */
-    flex:1  ;
+    flex: 1; /* Take available space */
     flex-direction: column; /* Stack content vertically */
-    max-width: 30vw;
-    max-height:10vh ;
+    max-width: 100%; /* Make sure it uses full width */
+    
 }
-
-/* Header container for logo and text */
-
 
 /* Logo styling */
 .logo {
-    
     width: 4.5vw; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-top: 0;
-    margin-right: 0; /* Space between image and container */
+    margin: 0; /* Remove unnecessary margins */
 }
 
-/* Header text styling */
-.header {
 
+/* Header styling */
+.header {
     display: flex; /* Use flexbox to align items horizontally */
     align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items vertically */
-    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
 }
 
 .header h1 {
     margin: 0; /* Remove default margin */
     font-size: 3vw; /* Adjust as needed */
-
 }
 
 .header p {
     margin: 0; /* Remove default margin */
     font-size: 1vw; /* Adjust as needed */
 }
+
 .drink-list {
     margin: 0; /* Remove default margin */
-    text-align: center;
-
-    font-size: .9vw; /* Adjust as needed */
+    text-align: center; /* Center the text */
+    font-size: 0.9vw; /* Adjust as needed */
 }
 
-/* Add this to ensure the border image is displayed properly */
+/* Media query for smaller screens */
 @media (max-width: 650px) {
     .container-header {
-        width: 30vw; /* Full width on smaller screens */
+        width: 30vw; /* Make it more responsive */
         height: auto; /* Let height adjust based on content */
+    }
+    .header h1 {
+        font-size: 3vw; /* Increase size on smaller screens */
+    }
+    .header p {
+        font-size: 1vw; /* Adjust for smaller screens */
+    }
+    .drink-list {
+        font-size: 1vw; /* Adjust for smaller screens */
     }
 }
