@@ -1,27 +1,26 @@
 /* Basic body styling */
 body, html {
-    height: 100%;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    height: 100vh;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Main container with image border */
 .container-header {
     position: relative;
-    width: 90%; /* Use percentage for better responsiveness */
-    max-width: 600px; /* Set a max width */
+    width: 40vw; /* Use percentage for better responsiveness */
     max-height: 90vh; /* Set a max height */
-    height: auto; /* Let height adjust based on content */
-    border: 30px solid transparent; /* Use a fixed pixel for control */
+    height: 80vh; /* Let height adjust based on content */
+    border: 20px solid transparent; /* Use a fixed pixel for control */
     border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Ensure the image path is correct */
     display: flex;
     flex-direction: column; /* Stack content vertically */
     overflow: hidden; /* Prevent content overflow */
     padding: 0; /* Remove padding */
 }
+
+/* Other styles remain unchanged... */
+
 
 /* Main container text */
 .container-header-text {
@@ -34,7 +33,7 @@ body, html {
 
 /* Logo styling */
 .logo {
-    width: 6.5vw; /* Adjust size as needed */
+    width: 5.5vw; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     margin: 0; /* Remove unnecessary margins */
 }
@@ -60,22 +59,26 @@ body, html {
 .drink-list {
     margin: 0; /* Remove default margin */
     text-align: center; /* Center the text */
-    font-size: 0.9vw; /* Adjust as needed */
+    font-size: 1.2vw; /* Adjust as needed */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 750px) {
     .container-header {
-        width: 95%; /* Use more width on smaller screens */
+        width: 40vw; /* Use more width on smaller screens */
+        border: 20px solid transparent; /* Increased border width */
+        border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Ensure the image path is correct */
+
+        background-color: rgba(230, 16, 16, 0.8); /* Light background to help see the container */
         height: auto; /* Let height adjust based on content */
     }
     .header h1 {
-        font-size: 5vw; /* Increase size on smaller screens */
+        font-size: 4vw; /* Increase size on smaller screens */
     }
     .header p {
-        font-size: 2.5vw; /* Adjust for smaller screens */
+        font-size: 1vw; /* Adjust for smaller screens */
     }
     .drink-list {
-        font-size: 2vw; /* Adjust for smaller screens */
+        font-size: 1.2vw; /* Adjust for smaller screens */
     }
 }
