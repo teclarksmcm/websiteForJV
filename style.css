@@ -34,7 +34,7 @@ body, html {
 
 /* Logo styling */
 .logo {
-    width: 4.5vw; /* Adjust size as needed */
+    width: 6.5vw; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     margin: 0; /* Remove unnecessary margins */
 }
@@ -64,7 +64,7 @@ body, html {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 100vw) {
+@media (max-width: 750px) {
     .container-header {
         width: 95%; /* Use more width on smaller screens */
         height: auto; /* Let height adjust based on content */
