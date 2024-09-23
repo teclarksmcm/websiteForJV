@@ -11,7 +11,7 @@ body, html {
 .container-header {
     position: relative;
     width: 30vw; /* Adjust for responsiveness */
-    height: auto;
+    height: 80vh;
     max-width: 650px; /* Optional: set a max width */
     max-height: 90vh; /* Set a max height to prevent it from being too tall */
     border: 2vw solid transparent;
