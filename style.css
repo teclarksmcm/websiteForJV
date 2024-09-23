@@ -38,7 +38,7 @@ body, html {
 /* Logo styling */
 .logo {
     width: 10vw; /* Adjust size as needed */
-    max-width: 100px; /* Maintain aspect ratio */
+    max-width: 10vw; /* Maintain aspect ratio */
     height: auto; /* Keep aspect ratio */
     margin: 0; /* Remove unnecessary margins */
 }
@@ -95,24 +95,3 @@ body, html {
     overflow-wrap: break-word; /* Allow words to break */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 750px) {
-    .container-header {
-        width: 90%; /* Use more width on smaller screens */
-        height: auto; /* Let height adjust based on content */
-    }
-    .header h1 {
-        font-size: 5vw; /* Increase size on smaller screens */
-        max-width: 90%; /* Prevent overflow */
-        word-wrap: break-word; /* Allow wrapping */
-    }
-    .header p {
-        font-size: 3vw; /* Adjust for smaller screens */
-        max-width: 90%; /* Prevent overflow */
-        word-wrap: break-word; /* Allow wrapping */
-    }
-    .drink-list {
-        font-size: 2.5vw; /* Adjust for smaller screens */
-        max-width: 95%; /* Allow more width for list */
-    }
-}
