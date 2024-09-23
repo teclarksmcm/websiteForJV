@@ -1,6 +1,6 @@
 /* Basic body styling */
 body, html {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -10,10 +10,11 @@ body, html {
 /* Main container with image border */
 .container-header {
     position: relative;
-    width: 40vw; /* Adjust for responsiveness */
-    height: auto;
-    max-height: 90vh; /* Set a max height to prevent it from being too tall */
-    border: 2vw solid transparent;
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 600px; /* Set a max width */
+    max-height: 90vh; /* Set a max height */
+    height: auto; /* Let height adjust based on content */
+    border: 2px solid transparent; /* Change to fixed pixel for better control */
     border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Ensure the image path is correct */
     display: flex;
     flex-direction: column; /* Stack content vertically */
@@ -26,23 +27,22 @@ body, html {
     align-items: center; /* Center items vertically */
     flex: 1; /* Take available space */
     flex-direction: column; /* Stack content vertically */
-    max-width: 100vh; /* Make sure it uses full width */
-    
+    max-width: 100%; /* Make sure it uses full width */
 }
 
 /* Logo styling */
 .logo {
-    width: 5.5vw; /* Adjust size as needed */
+    width: 4.5vw; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     margin: 0; /* Remove unnecessary margins */
 }
-
 
 /* Header styling */
 .header {
     display: flex; /* Use flexbox to align items horizontally */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
+    padding: 10px; /* Optional: padding around header */
 }
 
 .header h1 {
@@ -58,6 +58,22 @@ body, html {
 .drink-list {
     margin: 0; /* Remove default margin */
     text-align: center; /* Center the text */
-    font-size: 1.5vw; /* Adjust as needed */
+    font-size: 0.9vw; /* Adjust as needed */
 }
 
+/* Media query for smaller screens */
+@media (max-width: 650px) {
+    .container-header {
+        width: 95%; /* Use more width on smaller screens */
+        height: auto; /* Let height adjust based on content */
+    }
+    .header h1 {
+        font-size: 5vw; /* Increase size on smaller screens */
+    }
+    .header p {
+        font-size: 2.5vw; /* Adjust for smaller screens */
+    }
+    .drink-list {
+        font-size: 2vw; /* Adjust for smaller screens */
+    }
+}
