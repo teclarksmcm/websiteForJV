@@ -1,6 +1,6 @@
 /* Basic body styling */
 body, html {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -10,9 +10,8 @@ body, html {
 /* Main container with image border */
 .container-header {
     position: relative;
-    width: 30vw; /* Adjust for responsiveness */
-    height: 80vh;
-    max-width: 650px; /* Optional: set a max width */
+    width: 40vw; /* Adjust for responsiveness */
+    height: auto;
     max-height: 90vh; /* Set a max height to prevent it from being too tall */
     border: 2vw solid transparent;
     border-image: url("images/background_outline_padding_6x9.svg") 30 stretch; /* Ensure the image path is correct */
@@ -27,13 +26,13 @@ body, html {
     align-items: center; /* Center items vertically */
     flex: 1; /* Take available space */
     flex-direction: column; /* Stack content vertically */
-    max-width: 100%; /* Make sure it uses full width */
+    max-width: 100vh; /* Make sure it uses full width */
     
 }
 
 /* Logo styling */
 .logo {
-    width: 4.5vw; /* Adjust size as needed */
+    width: 5.5vw; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     margin: 0; /* Remove unnecessary margins */
 }
@@ -59,22 +58,6 @@ body, html {
 .drink-list {
     margin: 0; /* Remove default margin */
     text-align: center; /* Center the text */
-    font-size: 0.9vw; /* Adjust as needed */
+    font-size: 1.5vw; /* Adjust as needed */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 650px) {
-    .container-header {
-        width: 30vw; /* Make it more responsive */
-        height: auto; /* Let height adjust based on content */
-    }
-    .header h1 {
-        font-size: 3vw; /* Increase size on smaller screens */
-    }
-    .header p {
-        font-size: 1vw; /* Adjust for smaller screens */
-    }
-    .drink-list {
-        font-size: 1vw; /* Adjust for smaller screens */
-    }
-}
